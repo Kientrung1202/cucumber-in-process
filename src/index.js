@@ -1,9 +1,13 @@
-class Greeter {
-    sayHello() {
-        return 'hello'
+class Login {
+    login(username, password) {
+
+        if (username == 'admin' && password == 'admin') {
+            return 'ok'
+        }
+        else return 'wrong'
     }
 }
 
 module.exports = {
-    Greeter
+    Login
 }
